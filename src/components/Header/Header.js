@@ -102,9 +102,13 @@ const DesktopIcons = styled(Icons)`
 const MainHeader = styled(MaxWidthWrapper)`
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 32px;
   margin-bottom: 48px;
+
+  @media${QUERIES.desktopAndUp} {
+    justify-content: space-between;
+  }
 `;
 
 export default Header;

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
+import { QUERIES } from "../../constants";
 
 const OpinionStory = ({ id, title, author, avatar }) => {
   return (
@@ -17,6 +18,7 @@ const OpinionStory = ({ id, title, author, avatar }) => {
 
 const Link = styled.a`
   padding: 16px 0;
+  flex: 1;
 
   &:not(:last-of-type) {
     border-bottom: 1px solid var(--color-gray-300);
@@ -29,6 +31,10 @@ const Wrapper = styled.article`
   flex-direction: row-reverse;
   justify-content: space-between;
   gap: 10px;
+
+  @media${QUERIES.tabletOnly} {
+    flex-direction: column;
+  }
 `;
 
 const Avatar = styled.img`
