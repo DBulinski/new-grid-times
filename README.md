@@ -91,8 +91,8 @@ Critically, the borders only run _between_ stories. Not above the top story, or 
 A good place to start is in `MainStoryGrid.js`. That's where all of these stories are laid out.
 
 ### Opinion avatar placement
-
 Opinion stories show a picture of the journalist. On mobile, this image is meant to be shifted off to the side:
+
 
 ![Close-up of the Opinion section on mobile, highlighting the avatars](/docs/mobile-avatar-position.png)
 
