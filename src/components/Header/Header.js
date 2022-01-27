@@ -49,7 +49,7 @@ const SuperHeader = styled.div`
   background: var(--color-gray-900);
   color: white;
 
-  @media${QUERIES.desktopAndUp} {
+  @media${QUERIES.laptopAndUp} {
     display: none;
   }
 `;
@@ -74,7 +74,7 @@ const ActionGroup = styled.div`
 
 const SubscriberButton = styled.div`
   display: none;
-  @media${QUERIES.desktopAndUp} {
+  @media${QUERIES.laptopAndUp} {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,14 +87,14 @@ const SubscriberButton = styled.div`
 `;
 
 const MobileIcons = styled(Icons)`
-  @media${QUERIES.desktopAndUp} {
+  @media${QUERIES.laptopAndUp} {
     display: none;
   }
 `;
 
 const DesktopIcons = styled(Icons)`
   display: none;
-  @media${QUERIES.desktopAndUp} {
+  @media${QUERIES.laptopAndUp} {
     display: flex;
   }
 `;
@@ -106,7 +106,7 @@ const MainHeader = styled(MaxWidthWrapper)`
   margin-top: 32px;
   margin-bottom: 48px;
 
-  @media${QUERIES.desktopAndUp} {
+  @media${QUERIES.laptopAndUp} {
     justify-content: space-between;
   }
 `;
